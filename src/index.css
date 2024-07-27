@@ -1,3 +1,8 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
 .mainDiv {
   display: flex;
   flex-direction: column;
@@ -34,15 +39,69 @@
 }
 
 .modal-container {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   flex-wrap: wrap;
   width: 70%;
+  height: fit-content;
+  margin-bottom: 9%;
+  background-color: white;
+  margin: 15%  auto; 
+  padding: 1rem;
+  border-radius: 7px;
 }
 
+.items-color {
+  padding: 12% 27%;
+  border: 1px solid rgb(192, 188, 188);
+  border-radius: 5px;
+  margin-right: 1rem;
+ 
+}
 
+.modal-item{
+  border-bottom: 1px solid rgb(192, 188, 188);
+}
 
-@media (max-width:1000px) {
+.modal-item > div > p{
+  color: #696969;
+  font-size: 1.1rem;
+  
+}
+
+.modal-item > p {
+  color: #696969;
+  font-size: 1.1rem;
+}
+
+.buttons-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  gap: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.button-close{
+  background-color: white;
+  border: 1px solid rgb(192, 188, 188);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+ }
+ .button-save{
+   background-color: white;
+   border: none;
+   border-radius: 5px;
+   padding: 0.5rem 1rem;
+   background-color: #2072EF;
+   color: whitesmoke;
+   font-weight: 500;
+  }
+
+@media (max-width:750px) {
 
   html{
     -ms-overflow-style: none;
@@ -79,8 +138,45 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 70%;
+    width: 85%;
+    height:40%;
     background-color: white;
+    margin-top: 15% ;
+    padding: 1rem;
   }
 
+  .items-color {
+    padding: 10% 25%;
+    border: 1px solid rgb(192, 188, 188);
+    
+   
+  }
+
+  .modal-item > div > p{
+    color: #6d6d6d;
+    font-size: 0.8rem;
+  }
+
+  .modal-item > p {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+  }
+
+  .buttons-div {
+    margin-top: 0.9rem;
+    margin-bottom: 0;
+  }
+
+  .button-close{
+   background-color: white;
+   border: 1px solid rgb(192, 188, 188);
+   padding: 0.4rem 0.8rem;
+  }
+  .button-save{
+ 
+    border: 1px solid rgb(192, 188, 188);
+    padding: 0.4rem 0.8rem;
+   }
+
 }
+
