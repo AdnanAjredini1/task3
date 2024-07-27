@@ -139,7 +139,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     width: 85%;
-    height:40%;
+    height:fit-content;
     background-color: white;
     margin-top: 15% ;
     padding: 1rem;
